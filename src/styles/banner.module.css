@@ -1,0 +1,30 @@
+.img {
+  margin-left: 70px;
+}
+
+.imgM {
+  display: none;
+}
+
+.bannerBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .img {
+    display: none;
+  }
+
+  .imgM {
+    display: block;
+    padding-top: 60px;
+    margin-left: 10px;
+  }
+
+  .bannerBlock {
+    grid-template-columns: 100%;
+  }
+}

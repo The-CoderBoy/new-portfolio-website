@@ -1,0 +1,38 @@
+.flex {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+}
+.lik {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  margin-top: 3px;
+  color: white;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+.divM {
+  background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-left: 20px;
+  }
+  .div {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .divM {
+    display: none;
+  }
+}
