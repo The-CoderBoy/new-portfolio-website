@@ -1,5 +1,7 @@
 .img {
-  margin-left: 70px;
+  margin: auto;
+  height: 400px;
+  width: 600px;
 }
 
 .imgM {
@@ -7,10 +9,21 @@
 }
 
 .bannerBlock {
+  width: 80%;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   background-color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .img {
+    height: 350px;
+    width: 500px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -19,9 +32,10 @@
   }
 
   .imgM {
+    margin: auto;
     display: block;
-    padding-top: 60px;
-    margin-left: 10px;
+    width: 300px;
+    height: 300px;
   }
 
   .bannerBlock {

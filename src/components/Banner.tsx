@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import img1 from "../../public/images/gj.jpg";
+import img2 from "../../public/images/gjm.png";
 import { Typewriter } from "react-simple-typewriter";
 import Style from "@/styles/banner.module.css";
 
@@ -10,18 +12,14 @@ function Block() {
         <div>
           <div>
             <Image
-              width={500}
-              height={396}
               className={Style.img}
-              src="/images/gj.jpg"
-              alt=""
+              src={img1}
+              alt="Gaurav The Coder Boy"
             />
             <Image
-              width={300}
-              height={250}
               className={Style.imgM}
-              src="/images/gjm.png"
-              alt=""
+              src={img2}
+              alt="Gaurav The Coder Boy"
             />
           </div>
         </div>
