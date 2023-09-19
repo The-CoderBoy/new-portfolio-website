@@ -1,0 +1,14 @@
+.container {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-around;
+}
