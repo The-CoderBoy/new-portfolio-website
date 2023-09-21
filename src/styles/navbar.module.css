@@ -8,7 +8,11 @@
   text-decoration: none;
   font-family: "Oswald", sans-serif;
   margin-top: 3px;
-  color: white;
+  color: black;
+}
+
+.lik:hover{
+  color: #9c833e;
 }
 
 .logo {
@@ -21,6 +25,17 @@
 .divM {
   background-color: black;
 }
+
+.navSection {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 4px black;
+}
+
 
 @media screen and (max-width: 768px) {
   .logo {

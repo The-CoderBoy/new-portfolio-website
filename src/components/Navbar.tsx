@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Styles from "@/styles/navbar.module.css";
-import { BsFilterRight } from "react-icons/bs";
+import { BsFilterRight, BsX } from "react-icons/bs";
 
 function Navbar() {
   const [hide, setHide] = useState(false);
@@ -18,21 +18,23 @@ function Navbar() {
           <Link className={Styles.logo} href="/">
             Gaurav Joshi
           </Link>
-          <Link className={Styles.lik} href="/">
-            Home
-          </Link>
-          <Link className={Styles.lik} href="/experience">
-            Experience
-          </Link>
-          <Link className={Styles.lik} href="/project">
-            Projects
-          </Link>
-          {/* <Link className={Styles.lik} href="/resume">
+          <div className={Styles.navSection}>
+            <Link className={Styles.lik} href="/">
+              Home
+            </Link>
+            <Link className={Styles.lik} href="/experience">
+              Experience
+            </Link>
+            <Link className={Styles.lik} href="/project">
+              Projects
+            </Link>
+            {/* <Link className={Styles.lik} href="/resume">
             Resume
           </Link> */}
-          <Link className={Styles.lik} href="/about">
-            About Me
-          </Link>
+            <Link className={Styles.lik} href="/about">
+              About Me
+            </Link>
+          </div>
         </div>
       </div>
       <div className={Styles.divM}>
@@ -40,22 +42,34 @@ function Navbar() {
           <Link className={Styles.logo} href="/">
             Gaurav Joshi
           </Link>
-          <BsFilterRight
-            onClick={hideHandler}
-            style={{ fontSize: "40px", color: "white" }}
-          />
+          {!hide ? (
+            <BsFilterRight
+              onClick={hideHandler}
+              style={{ fontSize: "40px", color: "white" }}
+            />
+          ) : (
+            <BsX
+              onClick={hideHandler}
+              style={{ fontSize: "40px", color: "white" }}
+            />
+          )}
         </div>
         {hide && (
           <div>
             <div
               style={{ width: "100%", backgroundColor: "white", height: "1px" }}
             ></div>
-            <p style={{ textAlign: "center" }}>
+            <p onClick={hideHandler} style={{ textAlign: "center" }}>
+              <Link className={Styles.lik} href="/">
+                Home
+              </Link>
+            </p>
+            <p onClick={hideHandler} style={{ textAlign: "center" }}>
               <Link className={Styles.lik} href="/experience">
                 Experience
               </Link>
             </p>
-            <p style={{ textAlign: "center" }}>
+            <p onClick={hideHandler} style={{ textAlign: "center" }}>
               <Link className={Styles.lik} href="/project">
                 Projects
               </Link>
@@ -65,7 +79,10 @@ function Navbar() {
                 Resume
               </Link>
             </p> */}
-            <p style={{ textAlign: "center", paddingBottom: "20px" }}>
+            <p
+              onClick={hideHandler}
+              style={{ textAlign: "center", paddingBottom: "5px" }}
+            >
               <Link className={Styles.lik} href="/about">
                 About Me
               </Link>
