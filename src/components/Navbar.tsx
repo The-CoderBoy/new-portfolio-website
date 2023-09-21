@@ -27,9 +27,9 @@ function Navbar() {
           <Link className={Styles.lik} href="/project">
             Projects
           </Link>
-          <Link className={Styles.lik} href="/resume">
+          {/* <Link className={Styles.lik} href="/resume">
             Resume
-          </Link>
+          </Link> */}
           <Link className={Styles.lik} href="/about">
             About Me
           </Link>
@@ -47,7 +47,9 @@ function Navbar() {
         </div>
         {hide && (
           <div>
-            <div style={{ width: "100%", backgroundColor: "white", height: "1px" }}></div>
+            <div
+              style={{ width: "100%", backgroundColor: "white", height: "1px" }}
+            ></div>
             <p style={{ textAlign: "center" }}>
               <Link className={Styles.lik} href="/experience">
                 Experience
@@ -58,11 +60,11 @@ function Navbar() {
                 Projects
               </Link>
             </p>
-            <p style={{ textAlign: "center" }}>
+            {/* <p style={{ textAlign: "center" }}>
               <Link className={Styles.lik} href="/resume">
                 Resume
               </Link>
-            </p>
+            </p> */}
             <p style={{ textAlign: "center", paddingBottom: "20px" }}>
               <Link className={Styles.lik} href="/about">
                 About Me

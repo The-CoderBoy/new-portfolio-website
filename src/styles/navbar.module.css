@@ -1,7 +1,7 @@
 .flex {
   display: flex;
   justify-content: space-around;
-  height: 50px;
+  height: 60px;
   align-items: center;
 }
 .lik {
@@ -13,7 +13,7 @@
 
 .logo {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 30px;
   color: white;
   font-family: "Oswald", sans-serif;
 }
