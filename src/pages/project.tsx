@@ -65,13 +65,15 @@ function Project() {
         In my career, I get the chance to work on so many websites and web
         applications, here are some of my biggest projects so far.
       </p>
-      {pro.map((x) => (
-        <ProCard
-          title={x.title}
-          category={x.category}
-          discription={x.discription}
-          img={x.img}
-        />
+      {pro.map((x, i) => (
+        <div key={i}>
+          <ProCard
+            title={x.title}
+            category={x.category}
+            discription={x.discription}
+            img={x.img}
+          />
+        </div>
       ))}
     </div>
   );

@@ -14,37 +14,33 @@ import Ec2 from "../../public/images/ec2.png";
 import Typescript from "../../public/images/typescript.webp";
 import NextJs from "../../public/images/nextjs-icon.png";
 import PostgreSql from "../../public/images/postgresql-logo.webp";
+import Redis from "../../public/images/redis.png";
+import Netlify from "../../public/images/Netlify.png";
 import Style from "@/styles/techSection.module.css";
 
 function Block2() {
   const iKnow: HTMLImageElement[] = [
+    Typescript,
     NodeJs,
+    NextJs,
     Express,
     ReactLogo,
     MongoDb,
-    Typescript,
-    NextJs,
+    Mysql,
+    PostgreSql,
+    Redis,
     Postman,
     Bootstrap,
     Ubuntu,
     Jquery,
-    Mysql,
-    PostgreSql,
-    Figma,
+    Netlify,
     Ec2,
+    Figma,
   ];
 
   return (
     <div className={Style.container}>
-      <p
-        style={{
-          fontSize: "25px",
-          fontWeight: "bold",
-          marginTop: "0px",
-        }}
-      >
-        Technologies I have experience with
-      </p>
+      <p className={Style.title}>Technologies I have experience with</p>
       <div className={Style.card}>
         {iKnow.map((x, i) => (
           <div key={i} style={{ marginBottom: "20px" }}>

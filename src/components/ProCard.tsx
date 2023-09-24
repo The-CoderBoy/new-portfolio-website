@@ -32,8 +32,8 @@ function ExproCard(props: proDetail) {
       <P>Title :- {props.title}</P>
       <P>Category :- {props.category}</P>
       <Carousel infiniteLoop={true} swipeable={true} dynamicHeight={true}>
-        {props.img.map((x) => (
-          <div>
+        {props.img.map((x,i) => (
+          <div key={i}>
             <img src={x} alt="" />
           </div>
         ))}

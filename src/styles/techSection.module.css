@@ -12,3 +12,9 @@
   gap: 5px;
   justify-content: space-around;
 }
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 0px;
+}

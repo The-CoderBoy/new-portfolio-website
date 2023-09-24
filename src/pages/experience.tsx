@@ -2,14 +2,14 @@ import React from "react";
 import ExpCard from "@/components/ExpCard";
 
 type detail = {
-    title: String;
-    company: String;
-    duration: String;
-    description: String;
-  };
+  title: String;
+  company: String;
+  duration: String;
+  description: String;
+};
 
 function Experience() {
-  const data : detail[] = [
+  const data: detail[] = [
     {
       title: "Intern",
       company: "TIP Community",
@@ -34,8 +34,8 @@ function Experience() {
   ];
   return (
     <div>
-      {data.map((x) => (
-        <div>
+      {data.map((x, i) => (
+        <div key={i}>
           <ExpCard
             title={x.title}
             company={x.company}
