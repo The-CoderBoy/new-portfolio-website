@@ -11,6 +11,13 @@
   color: black;
 }
 
+.likM {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  margin-top: 3px;
+  color: white;
+}
+
 .lik:hover{
   color: #9c833e;
 }

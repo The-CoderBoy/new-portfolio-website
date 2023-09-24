@@ -60,22 +60,22 @@ function Navbar() {
               style={{ width: "100%", backgroundColor: "white", height: "1px" }}
             ></div>
             <p onClick={hideHandler} style={{ textAlign: "center" }}>
-              <Link className={Styles.lik} href="/">
+              <Link className={Styles.likM} href="/">
                 Home
               </Link>
             </p>
             <p onClick={hideHandler} style={{ textAlign: "center" }}>
-              <Link className={Styles.lik} href="/experience">
+              <Link className={Styles.likM} href="/experience">
                 Experience
               </Link>
             </p>
             <p onClick={hideHandler} style={{ textAlign: "center" }}>
-              <Link className={Styles.lik} href="/project">
+              <Link className={Styles.likM} href="/project">
                 Projects
               </Link>
             </p>
             {/* <p style={{ textAlign: "center" }}>
-              <Link className={Styles.lik} href="/resume">
+              <Link className={Styles.likM} href="/resume">
                 Resume
               </Link>
             </p> */}
@@ -83,7 +83,7 @@ function Navbar() {
               onClick={hideHandler}
               style={{ textAlign: "center", paddingBottom: "5px" }}
             >
-              <Link className={Styles.lik} href="/about">
+              <Link className={Styles.likM} href="/about">
                 About Me
               </Link>
             </p>
