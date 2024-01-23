@@ -45,7 +45,7 @@ function Block() {
               color: "#9c833e",
             }}
           >
-            I am a MERN Stack Developer
+            I am a Web Developer & Designer
           </p>
           <p
             style={{
@@ -54,8 +54,7 @@ function Block() {
               color: "#9c833e",
             }}
           >
-            By Education i am an Electrical Engineer By Profession i am a MERN
-            Developer
+            By Education i am an Electrical Engineer
           </p>
           <p
             style={{

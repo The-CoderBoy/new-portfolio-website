@@ -26,10 +26,10 @@ function Experience() {
     },
     {
       title: "MERN stack Developer",
-      company: "New Xtended Technology",
-      duration: "Aug-2022 to July-2023",
+      company: "Next Technology",
+      duration: "Aug-2022 to Dec-2023",
       description:
-        "After polishing my coding skills by freelancing, I have joined New Xtended Technology in Bhilwara.Here I get the chance to work with experienced Java, Dot Net, and Android developers. Here I am working as a MERN stack developer. Here I have learned how to build projects with hybrid technologies. ",
+        "After polishing my coding skills by freelancing, I have joined Next Technology .Here I get the chance to work with experienced Java, Dot Net, and Android developers. Here I am working as a MERN stack developer. Here I have learned how to build projects with hybrid technologies. ",
     },
   ];
   return (

@@ -74,8 +74,8 @@ function About() {
             inside our home for more than 3 months, in this period of time i
             dont have to do anything so i have start learning coding and buy
             some courses on udemy. when i found my self in love with programming
-            i decided to choose web developer as career, now its been two years
-            i am working as professional web developer
+            i decided to choose web developer as career, now its been three
+            years i am working as professional web developer
           </p>
         </InnerContainer>
       </Container>
